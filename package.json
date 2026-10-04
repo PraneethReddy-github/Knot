@@ -1,0 +1,20 @@
+{
+  "name": "knot",
+  "version": "1.0.0",
+  "description": "P2P streaming and file sharing - connect, stream, share",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node worker/signaling-node.js & vite --host",
+    "signal": "node worker/signaling-node.js",
+    "build": "vite build",
+    "start": "node server.js",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "ws": "^8.22.0"
+  }
+}
